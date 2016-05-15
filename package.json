@@ -9,6 +9,7 @@
     "dev": "node server.js",
     "tdd": "mocha --opts mocha.opts --watch --watch-extensions js",
     "test": "mocha --opts mocha.opts",
+    "storybook": "start-storybook -p 9003",
     "coverage": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --opts mocha.opts --bail"
   },
   "repository": {
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@kadira/storybook": "^1.26.0",
     "autoprefixer": "^6.3.1",
     "babel": "^6.3.26",
     "babel-loader": "^6.2.2",
